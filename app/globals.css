@@ -1,26 +1,76 @@
-@import "tailwindcss";
+/* Muezzin home: layout injects WordPress/theme styles via head fragment; keep this file minimal to avoid overriding theme rules. */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+  Theme stacks .tq-fixed-bg at z-index:-2 and .tq-secondary-layer::before at z-index:-1,
+  so the tinted ::before fully covers the background image. Lift fixed-bg + content so the image shows.
+*/
+.tq-secondary-layer.position-relative > .tq-fixed-bg {
+  z-index: 0;
+}
+.tq-secondary-layer.position-relative > .container {
+  position: relative;
+  z-index: 1;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Same stacking fix for gray-layer sections (Our Services, Travel packages, etc.) */
+.tq-gray-layer.position-relative > .tq-fixed-bg {
+  z-index: 0;
+}
+.tq-gray-layer.position-relative > .container {
+  position: relative;
+  z-index: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/*
+  Skyline layer: positioning + blend on .tq-skyline-bg-img; actual artwork on .tq-skyline-bg-tqbg4.
+*/
+.tq-fixed-bg.tq-bg-secondary > .tq-skyline-bg-img {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+  filter: brightness(1.15) contrast(0.92);
+  background-image: url("https://ik.imagekit.io/sajib4aqc/tq-feat.webp?updatedAt=1778705369962");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Background artwork (tq-bg4.jpg) — calligraphy fades left, pattern dense on right */
+.tq-skyline-bg-tqbg4 {
+  background-image: url("https://ik.imagekit.io/sajib4aqc/tq-bg4.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  opacity: 1 !important;
+  filter: brightness(1) contrast(1) !important;
+}
+
+/* Side drawer: dim page behind panel (theme handles .tq-side-menu.active slide-in). */
+.tq-side-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999998;
+  background-color: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.tq-side-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+body.tq-side-menu-open {
+  overflow: hidden;
+}
+
+/* Footer copyright accent: keep gold on hover/focus (theme link hovers override inline color). */
+.tq-footer-copy-link,
+.tq-footer-copy-link:hover,
+.tq-footer-copy-link:focus {
+  color: #db9e30 !important;
 }

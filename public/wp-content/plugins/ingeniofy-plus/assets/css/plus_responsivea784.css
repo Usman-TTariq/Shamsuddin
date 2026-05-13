@@ -1,0 +1,779 @@
+@media (min-width: 1435px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1370px;
+  }
+}
+
+@media (max-width: 1925px) {
+}
+
+@media (max-width: 1605px) {
+}
+
+@media (max-width: 1445px) {
+}
+
+@media (max-width: 1370px) {
+  body {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  p,
+  ul li,
+  ol li,
+  .fun-fact-box > p {
+    line-height: 1.5;
+  }
+  .tq-feat-cap > h2,
+  .tq-sec-title > h2,
+  .tq-support-cause-cap > h2 {
+    font-size: 3.125rem;
+  }
+  .tq-sec-title > span {
+    font-size: 1rem;
+  }
+  .tq-service-box > p {
+    max-width: 100%;
+  }
+  .fun-fact-box > h4 > span {
+    font-size: 3.125rem;
+  }
+  .fun-fact-box {
+    padding: 2.5rem;
+  }
+  .tq-pillars-wrapper > div.row > div {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .tq-pillar-head > h4 {
+    font-size: 1.125rem;
+  }
+  .tq-consult-box-inner > a {
+    font-size: 1.8rem;
+  }
+  ul.tq-nav-tab > li.nav-item button.nav-link {
+    padding: 1.25rem;
+  }
+  ul.tq-nav-tab > li.nav-item {
+    font-size: 1rem;
+  }
+  .tq-follow-cap > svg {
+    top: 56%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .tq-header-menu nav ul {
+    gap: 2.3rem;
+  }
+  .tq-player .progressbar {
+    flex: 0 0 20.3rem;
+    max-width: 20.3rem;
+  }
+  .tq-course-cap {
+    padding: 1.875rem;
+  }
+  .tq-course-cap > h4 {
+    max-width: 95%;
+  }
+  .tq-upcoming-wrapper .tq-fixed-bg {
+    left: 17.5rem;
+  }
+  .tq-upcomin-meta + .tq-count-down {
+    margin-top: 3.5rem;
+  }
+  .tq-team-cap {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1290px) {
+  .tq-pt-100,
+  .tq-pt-110,
+  .tq-pt-120,
+  .tq-pt-130 {
+    padding-top: 5rem;
+  }
+  .tq-pb-100,
+  .tq-pb-110,
+  .tq-pb-120,
+  .tq-pb-130 {
+    padding-bottom: 5rem;
+  }
+  .tq-about-img > img {
+    clip-path: initial;
+  }
+  .tq-feat-item2,
+  .tq-feat-bg {
+    min-height: 45rem;
+    max-height: 45rem;
+  }
+  .tq-player-wrap {
+    margin-top: 5rem;
+  }
+  .tq-feat2-cap > h2 {
+    font-size: 6.25rem;
+  }
+  .tq-feat2-cap-wrap {
+    bottom: 3.125rem;
+  }
+  .tq-count-down {
+    gap: 2.5rem;
+  }
+  .tq-quran-box > h4,
+  .tq-service-box2 > h4 {
+    font-size: 1.5rem;
+  }
+  .tq-recent-cap2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1210px) {
+  .tq-post-cap > h3 {
+    font-size: 1.5rem;
+  }
+  .tq-namaz-timing-cap > h4,
+  .tq-service-box > h4,
+  .fun-fact-box > h4,
+  .tq-testi-cap > h4,
+  .tq-consult-box-wrap > h4,
+  .tq-recent-cap > h4,
+  .tq-quran-box > h4,
+  .tq-service-box2 > h4 {
+    font-size: 1.375rem;
+  }
+  .tq-testi-cap > p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .tq-package-head > h3 {
+    font-size: 1.875rem;
+  }
+  .tq-follow-cap > svg {
+    max-width: 32rem;
+    left: calc(50% - 16rem);
+  }
+  .tq-widget-box > p,
+  .tq-widget-box > ul li {
+    max-width: 100%;
+  }
+  .tq-footer-top + .tq-footer-body {
+    padding-top: 4rem;
+  }
+  .tq-footer-top + .tq-footer-body,
+  .tq-footer-body + .tq-footer-bottom,
+  .tq-newsletter-wrap + .tq-footer-bottom,
+  .tq-footer-body + .tq-newsletter-wrap {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .tq-pt-150,
+  .tq-pt-190 {
+    padding-top: 5rem;
+  }
+  .tq-pb-150,
+  .tq-pb-190 {
+    padding-bottom: 5rem;
+  }
+  header,
+  .tq-sticky-menu {
+    display: none;
+  }
+  .tq-res-header {
+    display: block;
+  }
+  .tq-pillar-body > span {
+    height: 7rem;
+    width: 7rem;
+    padding: 5px;
+  }
+  .tq-feat-cap > h2,
+  .tq-sec-title > h2,
+  .tq-support-cause-cap > h2,
+  .tq-follow-cap > h2,
+  .tq-recent-post-img > span,
+  .help-us-box-inner > h2 {
+    font-size: 2.5rem;
+  }
+  .tq-sec-title > h3,
+  .tq-upcoming-cap > h3 {
+    font-size: 1.875rem;
+  }
+  .tq-recent-cap2-inner > h4 {
+    font-size: 1.375rem;
+  }
+  .tq-feat-cap > p,
+  .tq-feat2-cap > p {
+    font-size: 1rem;
+  }
+  .tq-feat-wrapper {
+    padding-bottom: 5rem;
+  }
+  .tq-feat-caro {
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
+  .tq-namaz-timing-cap > p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .tq-sec-title-wrapper {
+    margin-bottom: 2.5rem;
+  }
+  .tq-namaz-timing-box2 {
+    max-width: 20rem;
+  }
+  .tq-upcoming-wrapper .tq-fixed-bg {
+    left: 14.7rem;
+  }
+  .tq-service-img2 > img {
+    margin-right: 0;
+  }
+  .tq-recent-cap2 > span {
+    font-size: 2.5rem;
+  }
+  .help-us-box {
+    -webkit-border-radius: 1.25rem;
+    border-radius: 1.25rem;
+    padding: 3.125rem 2.5rem;
+  }
+  svg.tq-lf-shape {
+    height: 22rem;
+    right: calc(100% - 10rem);
+  }
+  .tq-recent-cap2-inner > p + a {
+    margin-top: 1.875rem;
+  }
+  .tq-feat2-cap > h3 {
+    font-size: 2rem;
+  }
+  .tq-feat2-cap > h2 {
+    font-size: 5rem;
+  }
+  .tq-player .progressbar {
+    flex: 0 0 9rem;
+    max-width: 9rem;
+  }
+  .tq-sec-title-wrapper + .tq-courses-wrapper {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 995px) and (max-width: 1080px) {
+  .tq-widget-box > p,
+  .tq-widget-box > ul li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 995px) {
+  .tq-pt-150 {
+    padding-top: 5rem;
+  }
+  .tq-pb-150 {
+    padding-bottom: 5rem;
+  }
+  .tq-feat-cap > h2,
+  .tq-sec-title > h2,
+  .tq-support-cause-cap > h2,
+  .tq-follow-cap > h2,
+  .tq-recent-post-img > span,
+  .help-us-box-inner > h2 {
+    font-size: 2rem;
+  }
+  .tq-sec-title > h3,
+  .tq-newsletter-title > h3 {
+    font-size: 1.75rem;
+  }
+  .tq-about-cap > p {
+    max-width: 100%;
+  }
+  .tq-namaz-timing-boxes {
+    margin-bottom: 0;
+    min-width: 100%;
+  }
+  .tq-namaz-timing-box {
+    margin-top: 2.5rem;
+  }
+  .tq-namaz-timing-cap > p {
+    font-size: 0.9375rem;
+  }
+  .tq-service-img {
+    margin-bottom: 2.5rem;
+  }
+  .tq-service-box {
+    align-items: center !important;
+    text-align: center;
+  }
+  .tq-fun-facts-wrapper {
+    margin-top: 2.5rem;
+  }
+  .tq-pillars-wrapper > div.row > div {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+  .tq-testi-pagination {
+    margin-top: 2.5rem;
+  }
+  ul.tq-nav-tab + .tq-consult-box-wrap {
+    margin-top: 2.5rem;
+  }
+  .tq-tab-content {
+    margin-top: 3.125rem;
+  }
+  .tq-package-box {
+    max-width: 100%;
+  }
+  .tq-follow-cap {
+    min-height: 31.875rem;
+    justify-content: center;
+    margin-bottom: 1.875rem;
+  }
+  .tq-follow-cap > svg {
+    top: 1.25rem;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .tq-feat-item2,
+  .tq-feat-bg {
+    max-height: 40rem;
+    min-height: 40rem;
+  }
+  .tq-player-wrap {
+    margin-top: 3.125rem;
+    flex-direction: column;
+    padding: 10px;
+    -webkit-border-radius: 0.9375rem !important;
+    border-radius: 0.9375rem !important;
+  }
+  .tq-player-wrap > h6 {
+    width: 100%;
+    text-align: center;
+    -webkit-border-radius: inherit !important;
+    border-radius: inherit !important;
+    padding: 10px;
+  }
+  .tq-player .player {
+    gap: 0.9375rem;
+  }
+  .tq-player {
+    width: 100%;
+  }
+  .tq-swiper-buttons > div.tq-swiper-btn {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+  .tq-upcoming-wrapper .tq-fixed-bg {
+    left: -25%;
+    right: -25%;
+    width: auto;
+  }
+  .tq-upcoming-wrapper {
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+  .tq-upcoming-cap {
+    align-items: center !important;
+  }
+  .tq-upcoming-img {
+    margin: 0 0 1.875rem;
+  }
+  .tq-upcomin-meta + .tq-count-down {
+    margin-top: 2.5rem;
+  }
+  .tq-sec-title-wrapper.tq-mt-30 {
+    text-align: center;
+    justify-content: center !important;
+  }
+  .tq-team-box-wrap {
+    margin-top: 1.875rem !important;
+  }
+  .tq-team-boxes {
+    margin-top: -1.875rem !important;
+  }
+  .tq-sermons-wrapper .tq-sec-title-wrapper {
+    align-items: center !important;
+    text-align: center;
+  }
+  .tq-sec-title + .tq-theme-btn,
+  .tq-recent-cap2,
+  .tq-about-cap {
+    margin-top: 1.875rem;
+  }
+  .tq-about-cap {
+    gap: 1.875rem;
+  }
+  .tq-sermons-boxes {
+    padding-left: 0;
+  }
+  .tq-count-item > span:not(.tq-count-cap) {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+	
+
+}
+
+@media (max-width: 770px) {
+		  .pg-tp-inr h1:before {
+    left: 52%;
+    margin-left: -61px;
+    width: 160%;
+}
+  .tq-feat-img {
+    margin-bottom: 1.875rem;
+  }
+  .tq-feat-pagination.swiper-pagination-bullets {
+    justify-content: center;
+    bottom: 1.875rem;
+    width: 100%;
+    z-index: 1;
+  }
+  .tq-about-cap {
+    align-items: center !important;
+    text-align: center;
+    gap: 1.875rem;
+  }
+  .tq-about-wrapper .tq-post-boxes {
+    margin-top: 3.125rem;
+  }
+  .tq-namaz-timing-box {
+    margin-top: 1.875rem;
+  }
+  .tq-support-cause-box {
+    padding: 2.5rem;
+  }
+  .tq-support-cause-cap > p + .tq-support-cause-stats {
+    margin-top: 1.75rem;
+  }
+  .tq-sec-title-wrapper + ul.tq-nav-tab {
+    margin-top: -0.9375rem;
+  }
+  body,
+  .tq-support-cause-cap > p,
+  .tq-support-cause-stats-cap > span,
+  .tq-service-box > p {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+  .tq-package-head {
+    flex: 0 0 15rem;
+    padding: 1.875rem;
+  }
+  .tq-package-box {
+    gap: 1.5rem;
+  }
+  .tq-support-cause-box,
+  .fun-fact-box,
+  .tq-package-box,
+  .tq-package-head,
+  .tq-recent-post-img,
+  .tq-recent-post-img > span,
+  .tq-follow-box > a,
+  .tq-course-box,
+  .tq-course-img,
+  .tq-about-img2,
+  .tq-quran-box,
+  .tq-team-box,
+  .tq-sermon-box,
+  .tq-recent-img {
+    -webkit-border-radius: 0.9375rem;
+    border-radius: 0.9375rem;
+  }
+  .tq-sec-title-wrapper.justify-content-between {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+  ul.tq-nav-tab {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tq-consult-box-wrap {
+    align-items: center !important;
+  }
+  .tq-theme-btn {
+    font-size: 0.9375rem;
+    padding: 13px 1.875rem !important;
+  }
+  .tq-play-btn {
+    padding: 6px 1.875rem 6px 6px !important;
+  }
+  .tq-play-btn > i {
+    font-size: 13px;
+    margin-right: 10px;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+  }
+  .tq-pillars-wrapper > div.row > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .tq-pillar-head > h4,
+  .tq-recent-cap2-inner > h4,
+  .tq-team-cap > h4 {
+    font-size: 1.375rem;
+  }
+  .tq-pillar-box-wrap {
+    margin-top: 1.5rem !important;
+  }
+  .tq-testi-cap > p,
+  .tq-post-cap > h3 {
+    font-size: 1.375rem;
+  }
+  .tq-sec-title-left-icon .tq-sec-title {
+    padding: 0;
+    align-items: center;
+  }
+  .tq-sec-title-left-icon .tq-sec-title > svg {
+    position: static !important;
+  }
+  .tq-sec-title + .tq-theme-btn {
+    margin-top: 0.9375rem;
+  }
+  .tq-shape > svg {
+    max-width: 100%;
+  }
+  .namaz-timing-box-inner {
+    gap: 0.9375rem;
+  }
+  .tq-about-cap > ul {
+    text-align: initial;
+  }
+}
+
+@media (max-width: 767px) {
+  .tq-sermon-box {
+    flex-direction: column;
+    text-align: center !important;
+  }
+  .tq-sermon-box-inner {
+    flex-direction: inherit;
+    text-align: inherit;
+  }
+  .tq-sermon-cap {
+    align-items: center;
+  }
+}
+
+@media (max-width: 577px) {
+  .container,
+  .container-fluid {
+    padding: 0 1.25rem;
+  }
+  .tq-shape > svg {
+    max-width: 100%;
+  }
+  .tq-play-btn2 {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+  }
+  .tq-feat-cap > h2 br,
+  .tq-sec-title > h2 br,
+  .tq-support-cause-cap > h2 br,
+  .tq-follow-cap > h2 br {
+    display: none;
+  }
+  .tq-support-cause-box {
+    padding: 2.5rem 1.25rem;
+  }
+  .tq-pillars-wrapper {
+    margin-top: -1.5rem;
+    min-height: initial;
+  }
+  .tq-pillars-wrapper > div.row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  svg.tq-rg-shape {
+    height: 25rem;
+    bottom: 0;
+  }
+  .tq-consult-box > span {
+    height: 4rem;
+    width: 4rem;
+  }
+  .tq-consult-box-inner > a {
+    font-size: 1.5rem;
+  }
+  .tq-consult-box {
+    gap: 0.9375rem;
+  }
+  .tq-package-box {
+    flex-wrap: initial !important;
+    flex-direction: column;
+  }
+  .tq-package-head {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 1.875rem;
+    text-align: center;
+    align-items: center !important;
+  }
+  .tq-package-head > p + span {
+    margin-top: 1.25rem;
+  }
+  .tq-follow-cap {
+    position: relative;
+    gap: 1.25rem;
+    min-height: 24.0625rem;
+    margin-bottom: 0;
+    align-items: center;
+  }
+  .tq-follow-cap > svg {
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  .tq-follow-cap > i {
+    font-size: 2.5rem;
+  }
+  .tq-follow-cap > h2 {
+    max-width: 90%;
+  }
+  .tq-follow-boxes {
+    margin-top: 1.75rem;
+  }
+  .tq-follow-box {
+    margin-top: 0;
+  }
+  .tq-footer-bottom {
+    flex-direction: column;
+  }
+  .tq-res-topbar-inner .tq-logo {
+    max-width: 5rem;
+    margin-bottom: -1.875rem;
+  }
+  .tq-player .player {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tq-player .volume {
+    margin: 0;
+  }
+  .tq-player .progressbar {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  .tq-feat2-cap > h3 {
+    font-size: 1.5rem;
+  }
+  .tq-feat2-cap > h2 {
+    font-size: 3.125rem;
+  }
+  .tq-player-wrap {
+    margin-top: 1.875rem;
+  }
+  .tq-about-cap > ul {
+    width: 100%;
+  }
+  .tq-count-down {
+    gap: 1.875rem;
+  }
+  .tq-quran-box {
+    text-align: center;
+    align-items: center !important;
+    gap: 1.25rem;
+  }
+  .tq-team-box {
+    align-items: center;
+    text-align: center;
+  }
+  .tq-team-cap {
+    align-items: inherit !important;
+  }
+  .tq-recent-cap2 > span + .tq-recent-cap2-inner {
+    padding-left: 1.25rem;
+    margin-left: 0.9375rem;
+  }
+  .tq-recent-cap2-inner > p + a {
+    margin-top: 1.25rem;
+  }
+  .help-us-box {
+    padding: 2.5rem 1.25rem;
+  }
+  .tq-newsletter-form {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tq-newsletter-form > input {
+    height: 2.5rem;
+    text-align: center;
+    padding: 10px;
+  }
+  .tq-newsletter-form > button {
+    position: static;
+    width: 100%;
+    padding: 10px;
+  }
+  .tq-recent-cap2 {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+  .tq-recent-cap2 > span + .tq-recent-cap2-inner {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  .tq-recent-cap2-inner {
+    align-items: center;
+  }
+  .tq-sermon-cap .tq-sermon-auth {
+    font-size: 14px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 490px) {
+  .tq-follow-cap {
+    min-height: 21rem;
+  }
+  .tq-post-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .tq-post-boxes {
+    gap: 1.875rem;
+  }
+  .tq-post-icon {
+    width: 5.625rem;
+  }
+  .pg-tp-inr h1:before {
+    left: 58%;
+    margin-left: -61px;
+    width: 160%;
+}
+}
+
+@media (max-width: 470px) {
+}
+
+@media (max-width: 430px) {
+}
+
+@media (max-width: 380px) {
+}
+
+@media (max-width: 330px) {
+  .tq-res-header-right .tq-social-links {
+    display: none !important;
+  }
+}
