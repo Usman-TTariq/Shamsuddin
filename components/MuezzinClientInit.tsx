@@ -39,6 +39,7 @@ export function MuezzinClientInit() {
     void initMuezzinPrayerTimes(prayerAbort.signal);
 
     const panel = document.querySelector<HTMLElement>(".tq-side-menu");
+    const resMenu = document.querySelector<HTMLElement>(".tq-res-menu");
     let backdrop = document.querySelector<HTMLElement>(`.${SIDE_MENU_BACKDROP_CLASS}`);
     if (!backdrop) {
       backdrop = document.createElement("div");
@@ -47,7 +48,15 @@ export function MuezzinClientInit() {
       document.body.appendChild(backdrop);
     }
 
+    const closeResMenu = () => {
+      resMenu?.classList.remove("slidein");
+      document.querySelectorAll<HTMLElement>(".tq-res-menu-trigger").forEach((btn) => {
+        btn.setAttribute("aria-expanded", "false");
+      });
+    };
+
     const openMenu = () => {
+      closeResMenu();
       panel?.classList.add("active");
       backdrop?.classList.add("is-visible");
       document.body.classList.add("tq-side-menu-open");
@@ -61,9 +70,44 @@ export function MuezzinClientInit() {
       setMenuExpanded(false);
     };
 
+    const openResMenu = () => {
+      closeMenu();
+      resMenu?.classList.add("slidein");
+      document.querySelectorAll<HTMLElement>(".tq-res-menu-trigger").forEach((btn) => {
+        btn.setAttribute("aria-expanded", "true");
+      });
+    };
+
     const onDocClick = (e: MouseEvent) => {
       const t = e.target;
       if (!(t instanceof Element)) return;
+
+      const sectionLink = t.closest("a[href^='#section-']");
+      if (sectionLink instanceof HTMLAnchorElement) {
+        const href = sectionLink.getAttribute("href");
+        if (href) {
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            closeResMenu();
+            return;
+          }
+        }
+      }
+
+      if (t.closest(".tq-res-menu-trigger")) {
+        e.preventDefault();
+        if (resMenu?.classList.contains("slidein")) closeResMenu();
+        else openResMenu();
+        return;
+      }
+      if (t.closest(".tq-res-menu-close")) {
+        e.preventDefault();
+        closeResMenu();
+        return;
+      }
+
       if (t.closest(".tq-menu-btn")) {
         e.preventDefault();
         if (panel?.classList.contains("active")) closeMenu();
@@ -77,7 +121,9 @@ export function MuezzinClientInit() {
     };
 
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && panel?.classList.contains("active")) closeMenu();
+      if (e.key !== "Escape") return;
+      if (panel?.classList.contains("active")) closeMenu();
+      if (resMenu?.classList.contains("slidein")) closeResMenu();
     };
 
     backdrop.addEventListener("click", closeMenu);
@@ -91,6 +137,7 @@ export function MuezzinClientInit() {
       document.removeEventListener("click", onDocClick, true);
       document.removeEventListener("keydown", onKeyDown);
       closeMenu();
+      closeResMenu();
       if (backdrop.parentNode === document.body) backdrop.remove();
     };
   }, []);

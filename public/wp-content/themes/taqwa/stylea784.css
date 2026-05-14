@@ -1071,12 +1071,12 @@ header.style2 .logo > a {
 .rsnp-mnu ul li.menu-item-has-children.active > a {margin-bottom: 5px;}
 .rsnp-mnu ul ul li.menu-item-has-children.active > a {margin-bottom: 15px;}
 .rsnp-mnu ul ul li a::before{content:''; display:none;}
-.rsnp-mnu > ul li.menu-item-has-children a::before {
+/* .rsnp-mnu > ul li.menu-item-has-children a::before {
   content: ". . .";
   right: 25px;
   position: absolute;
   top: 10px;
-}
+} */
 .rsnp-mnu > ul ul > li {
   color: #a4a4a4;
   font-family: lato;
@@ -7896,7 +7896,7 @@ header.stick {
 .tq-sticky-menu-inner nav ul li.menu-item-has-children > a {
   padding-right: 1rem;
 }
-.tq-header-menu nav ul li.menu-item-has-children > a::before,
+/* .tq-header-menu nav ul li.menu-item-has-children > a::before,
 .tq-sticky-menu-inner nav ul li.menu-item-has-children > a::before {
   content: "\f0d7";
   font-family: "fontawesome";
@@ -7905,7 +7905,7 @@ header.stick {
   right: 0;
   top: 0;
   font-size: 13px;
-}
+} */
 .tq-header-menu-right {
   gap: 2.25rem;
 }

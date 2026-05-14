@@ -1,5 +1,15 @@
 /* Muezzin home: layout injects WordPress/theme styles via head fragment; keep this file minimal to avoid overriding theme rules. */
 
+/* In-page nav (#section-*): offset so content clears fixed / sticky header */
+#section-home,
+#section-about-book,
+#section-prayer-time,
+#section-services,
+#section-blogs,
+#section-contact {
+  scroll-margin-top: 6.25rem;
+}
+
 /*
   Theme stacks .tq-fixed-bg at z-index:-2 and .tq-secondary-layer::before at z-index:-1,
   so the tinted ::before fully covers the background image. Lift fixed-bg + content so the image shows.
@@ -73,6 +83,12 @@ body.tq-side-menu-open {
 .tq-footer-copy-link:hover,
 .tq-footer-copy-link:focus {
   color: #db9e30 !important;
+}
+
+/* Follow block: Instagram @ handle — white on hover/focus */
+.tq-follow-ig-handle:hover,
+.tq-follow-ig-handle:focus {
+  color: #fff !important;
 }
 
 /* Hero home: theme tq-pt-270 on desktop; on small screens use tq-pt-100 spacing (6.25rem). max-width 639px ≈ Tailwind max-sm. */
