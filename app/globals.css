@@ -74,3 +74,10 @@ body.tq-side-menu-open {
 .tq-footer-copy-link:focus {
   color: #db9e30 !important;
 }
+
+/* Hero home: theme tq-pt-270 on desktop; on small screens use tq-pt-100 spacing (6.25rem). max-width 639px ≈ Tailwind max-sm. */
+@media (max-width: 639px) {
+  .tq-hero-home.tq-pt-270 {
+    padding-top: 6.25rem !important;
+  }
+}

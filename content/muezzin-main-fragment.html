@@ -245,30 +245,30 @@
 													</tr>
 												</thead>
 												<tbody>
-													<tr>
+													<tr data-muezzin-prayer="fajr">
 														<td><i class="fa fa-sun-o" aria-hidden="true"></i>Fajr</td>
-														<td>3:27 AM</td>
-														<td>4:30 AM</td>
+														<td data-muezzin-adhan>3:27 AM</td>
+														<td data-muezzin-iqamah>4:30 AM</td>
 													</tr>
-													<tr>
+													<tr data-muezzin-prayer="zuhr">
 														<td><i class="fa fa-sun-o" aria-hidden="true"></i>Zuhr</td>
-														<td>01:02 PM</td>
-														<td>1:30 PM</td>
+														<td data-muezzin-adhan>01:02 PM</td>
+														<td data-muezzin-iqamah>1:30 PM</td>
 													</tr>
-													<tr>
+													<tr data-muezzin-prayer="asr">
 														<td><i class="fa fa-sun-o" aria-hidden="true"></i>Asr</td>
-														<td>6:14 PM</td>
-														<td>7:15 PM</td>
+														<td data-muezzin-adhan>6:14 PM</td>
+														<td data-muezzin-iqamah>7:15 PM</td>
 													</tr>
-													<tr>
+													<tr data-muezzin-prayer="maghrib">
 														<td><i class="fa fa-moon-o" aria-hidden="true"></i>Magrib</td>
-														<td>8:43 PM</td>
-														<td>8:43 PM</td>
+														<td data-muezzin-adhan>8:43 PM</td>
+														<td data-muezzin-iqamah>8:43 PM</td>
 													</tr>
-													<tr>
+													<tr data-muezzin-prayer="isha">
 														<td><i class="fa fa-moon-o" aria-hidden="true"></i>Isha</td>
-														<td>9:45 PM</td>
-														<td>10:15 PM
+														<td data-muezzin-adhan>9:45 PM</td>
+														<td data-muezzin-iqamah>10:15 PM
 														</td>
 													</tr>
 												</tbody>
@@ -643,13 +643,41 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 						<div class="elementor-widget-container">
 
 							<section>
-								<div class="w-100 tq-pt-190 tq-secondary-layer tq-opc97 position-relative">
+								<div class="tq-hero-home w-100 tq-pt-270 tq-secondary-layer tq-opc97 position-relative">
 									<div class="tq-fixed-bg tq-bg-secondary">
 										<div class="tq-skyline-bg-img" aria-hidden="true"></div>
 									</div>
 									<div class="container">
 										<div class="tq-feat-wrapper position-relative w-100">
-											<div class="tq-feat-caro swiper w-100">
+											<!-- Same parent classes Swiper used for active slide (theme shows .tq-feat-img / .tq-feat-cap only under .swiper-slide-active). -->
+											<div
+												class="tq-feat-item swiper-slide swiper-slide-active position-relative w-100">
+												<div class="row align-items-center">
+													<div class="col-md-6 col-sm-12 col-lg-6 order-md-1">
+														<div class="tq-feat-img position-relative w-100">
+
+															<img class="img-fluid"
+																src="https://ik.imagekit.io/sajib4aqc/Engaging%20The%20Quran%20Cover%20Design%20v2%20(1).jpg?updatedAt=1778716902717"
+																alt="Muezzin" itemprop="image" decoding="async"
+																referrerpolicy="no-referrer">
+														</div>
+													</div>
+													<div class="col-md-6 col-sm-12 col-lg-6">
+														<div
+															class="tq-feat-cap d-flex flex-column align-items-center position-relative text-center w-100">
+															<h2 class="mb-0">Discover Timeless Wisdom for Today's World
+															</h2>
+															<p>Move beyond religious ritual. Explore the Divine text as
+																a practical, accessible guide to overcoming life's
+																greatest challenges.</p>
+
+															<a class="tq-theme-btn tq-play-btn tq-bg-theme rounded-pill"
+																href="#"><i class="fas fa-play"></i>Order Your Copy</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- <div class="tq-feat-caro swiper w-100">
 												<div class="swiper-wrapper">
 
 
@@ -657,13 +685,12 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 														<div class="row align-items-center">
 															<div class="col-md-6 col-sm-12 col-lg-6 order-md-1">
 																<div class="tq-feat-img position-relative w-100">
-																	<!-- <img decoding="async" class="img-fluid" src=""
-																		alt="Slider Image" loading="lazy"> -->
+														
 																	<img class="img-fluid"
 																		src="https://ik.imagekit.io/sajib4aqc/tq-feat-img3.png"
 																		alt="Muezzin" itemprop="image" decoding="async"
 																		referrerpolicy="no-referrer">
-																</div><!-- Featured Image -->
+																</div>
 															</div>
 															<div class="col-md-6 col-sm-12 col-lg-6">
 																<div
@@ -677,10 +704,10 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																		href="#"><i
 																			class="fas fa-play"></i>Listen Holy
 																		Quran</a>
-																</div><!-- Featured Cap -->
+																</div>
 															</div>
 														</div>
-													</div><!-- Featured Item -->
+													</div>
 
 
 													<div class="tq-feat-item swiper-slide position-relative w-100">
@@ -691,7 +718,7 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																		src="https://ik.imagekit.io/sajib4aqc/tq-feat-img1.png"
 																		alt="Muezzin" itemprop="image" decoding="async"
 																		referrerpolicy="no-referrer">
-																</div><!-- Featured Image -->
+																</div>
 															</div>
 															<div class="col-md-6 col-sm-12 col-lg-6">
 																<div
@@ -705,10 +732,10 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																		href="#"><i
 																			class="fas fa-play"></i>Listen Holy
 																		Quran</a>
-																</div><!-- Featured Cap -->
+																</div>
 															</div>
 														</div>
-													</div><!-- Featured Item -->
+													</div>
 
 
 													<div class="tq-feat-item swiper-slide position-relative w-100">
@@ -719,7 +746,7 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																		src="https://ik.imagekit.io/sajib4aqc/tq-feat-img2.png"
 																		alt="Muezzin" itemprop="image" decoding="async"
 																		referrerpolicy="no-referrer">
-																</div><!-- Featured Image -->
+																</div>
 															</div>
 															<div class="col-md-6 col-sm-12 col-lg-6">
 																<div
@@ -733,15 +760,18 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																		href="#"><i
 																			class="fas fa-play"></i>Listen Holy
 																		Quran</a>
-																</div><!-- Featured Cap -->
+																</div>
 															</div>
 														</div>
-													</div><!-- Featured Item -->
+													</div>
 
 												</div>
-											</div><!-- Featured Carousel -->
-											<div class="tq-feat-pagination"></div><!-- Featured Pagination -->
-										</div><!-- Featured Wrapper -->
+											</div> -->
+											<!-- Featured Carousel -->
+											<!-- <div class="tq-feat-pagination"></div> -->
+											<!-- Featured Pagination -->
+										</div>
+										<!-- Featured Wrapper -->
 									</div>
 								</div>
 								<div class="tq-shape-box tq-mb-30 position-relative text-center w-100">
@@ -782,7 +812,7 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 													src="https://ik.imagekit.io/sajib4aqc/shape2.png" alt="Slider Image"
 													loading="lazy">
 												<!-- <img decoding="async" class="img-fluid" src="" alt=""> -->
-												<span>Welcome to the Islamic center</span>
+												<span>ABOUT THE BOOK</span>
 												<h2 class="mb-0">In The Name Of Allah <br> The Beneficent The Merciful
 												</h2>
 											</div><!-- Section Title -->
@@ -792,15 +822,21 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 												<div class="col-md-6 col-sm-12 col-lg-6">
 													<div
 														class="tq-about-cap d-flex flex-column align-items-start w-100">
-														<p>Proin gravida nibh vel velit auctor aliquet. Aenean
-															sollicitudin. This is Photoshops version of Lorem Ipsum.
-															Proin gravida nibh vel velit auctor aliquet. Aenean itudin.
-															This is Photoshops sion of Lorem Ipsum. Proin gravia nibh
-															vel velit auctor aliquet. This is Photoshops versionf Lorem
-															Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-															sollicitudin.</p>
-														<a class="tq-theme-btn bg-white rounded-pill"
-															href="#">Read More</a>
+														<p>The Qur'an is the most revered and most misunderstood book on
+															the
+															planet. Engaging the Qur'an bridges the gap between ancient
+															text
+															and contemporary life.</p>
+														<p>In 55 wide-ranging, easy-to-read chapters, this book provides
+															a fresh
+															perspective on the Divine message. It is written
+															specifically to be
+															clear and accessible, helping readers of all ages find
+															spiritual
+															grounding, peace, and practical direction.
+														</p>
+														<a class="tq-theme-btn bg-white rounded-pill" href="#">Read
+															More</a>
 													</div><!-- About Cap -->
 												</div>
 												<div class="col-md-6 col-sm-12 col-lg-6">
@@ -817,9 +853,10 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 
 															<div class="tq-post-cap d-flex flex-column">
 																<h3 class="mb-0">Our Vision</h3>
-																<p class="mb-0">Nibh vel velit auctor aliquet. Aenean
-																	ituin. This is Photoshops version of Photoshops sion
-																	of Lorem.</p>
+																<p class="mb-0">A world where every Muslim — and every
+																	curious human being — can access the true,
+																	practical wisdom of the Qur'an in plain and clear
+																	language.</p>
 															</div>
 														</div><!-- Post Box -->
 
@@ -836,9 +873,10 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 
 															<div class="tq-post-cap d-flex flex-column">
 																<h3 class="mb-0">Our Mission</h3>
-																<p class="mb-0">Nibh vel velit auctor aliquet. Aenean
-																	ituin. This is Photoshops version of Photoshops sion
-																	of Lorem.</p>
+																<p class="mb-0">To educate, inspire, and empower readers
+																	through honest, scholarly engagement with the
+																	Qur'anic text — addressing the real questions of
+																	contemporary life.</p>
 															</div>
 														</div><!-- Post Box -->
 
@@ -849,9 +887,9 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 											</div>
 										</div><!-- About Wrapper -->
 										<div class="tq-about-img tq-mt-45 position-relative w-100">
-											<a class="tq-play-btn2 tq-bg-theme text-white rounded-circle position-absolute"
+											<!-- <a class="tq-play-btn2 tq-bg-theme text-white rounded-circle position-absolute"
 												data-fancybox="" href="https://www.youtube.com/embed/juKd26qkNAw"><i
-													class="fas fa-play"></i></a>
+													class="fas fa-play"></i></a> -->
 
 											<img decoding="async" class="img-fluid"
 												src="https://ik.imagekit.io/sajib4aqc/tq-about-img.webp"
@@ -920,7 +958,7 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 													<div
 														class="tq-sec-title-wrapper d-flex flex-column mb-0 position-relative w-100">
 														<div class="tq-sec-title d-flex flex-column">
-															<span>Prayer times in United States</span>
+															<span data-muezzin-prayer-region>Prayer times</span>
 															<h2 class="mb-0">Our Namaz Timings</h2>
 														</div><!-- Section Title -->
 													</div><!-- Section Title Wrapper -->
@@ -971,11 +1009,13 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 				c-13.62-1.47-25.03-7.59-35.44-16.06c-16.04-13.04-28.3-29.56-41.61-45.12C18.72,302.43,10.67,292.41,0,285z" />
 																		</g>
 																	</svg>
-																	<div
-																		class="tq-namaz-timing-cap d-flex flex-column position-absolute">
+																	<div class="tq-namaz-timing-cap d-flex flex-column position-absolute"
+																		data-muezzin-prayer-card="fajr">
 																		<h4 class="mb-0">Fajr</h4>
-																		<p class="mb-0">Begins: 3:27 AM</p>
-																		<p class="mb-0">Iqamah: 4:30 AM</p>
+																		<p class="mb-0" data-muezzin-begins>Begins: 3:27
+																			AM</p>
+																		<p class="mb-0" data-muezzin-iqamah>Iqamah: 4:30
+																			AM</p>
 																	</div><!-- Namaz Timing Cap -->
 																</div><!-- Namaz Timing Box -->
 															</div>
@@ -1022,11 +1062,13 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 				c-13.62-1.47-25.03-7.59-35.44-16.06c-16.04-13.04-28.3-29.56-41.61-45.12C18.72,302.43,10.67,292.41,0,285z" />
 																		</g>
 																	</svg>
-																	<div
-																		class="tq-namaz-timing-cap d-flex flex-column position-absolute">
+																	<div class="tq-namaz-timing-cap d-flex flex-column position-absolute"
+																		data-muezzin-prayer-card="zuhr">
 																		<h4 class="mb-0">Zuhr</h4>
-																		<p class="mb-0">Begins: 01:02 PM</p>
-																		<p class="mb-0">Iqamah: 1:30 PM</p>
+																		<p class="mb-0" data-muezzin-begins>Begins:
+																			01:02 PM</p>
+																		<p class="mb-0" data-muezzin-iqamah>Iqamah: 1:30
+																			PM</p>
 																	</div><!-- Namaz Timing Cap -->
 																</div><!-- Namaz Timing Box -->
 															</div>
@@ -1074,11 +1116,11 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 				c-13.62-1.47-25.03-7.59-35.44-16.06c-16.04-13.04-28.3-29.56-41.61-45.12C18.72,302.43,10.67,292.41,0,285z" />
 															</g>
 														</svg>
-														<div
-															class="tq-namaz-timing-cap d-flex flex-column position-absolute">
+														<div class="tq-namaz-timing-cap d-flex flex-column position-absolute"
+															data-muezzin-prayer-card="asr">
 															<h4 class="mb-0">Asr</h4>
-															<p class="mb-0">Begins: 6:14 PM</p>
-															<p class="mb-0">Iqamah: 7:15 PM</p>
+															<p class="mb-0" data-muezzin-begins>Begins: 6:14 PM</p>
+															<p class="mb-0" data-muezzin-iqamah>Iqamah: 7:15 PM</p>
 														</div><!-- Namaz Timing Cap -->
 													</div><!-- Namaz Timing Box -->
 												</div>
@@ -1123,11 +1165,11 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 				c-13.62-1.47-25.03-7.59-35.44-16.06c-16.04-13.04-28.3-29.56-41.61-45.12C18.72,302.43,10.67,292.41,0,285z" />
 															</g>
 														</svg>
-														<div
-															class="tq-namaz-timing-cap d-flex flex-column position-absolute">
+														<div class="tq-namaz-timing-cap d-flex flex-column position-absolute"
+															data-muezzin-prayer-card="maghrib">
 															<h4 class="mb-0">Magrib</h4>
-															<p class="mb-0">Begins: 8:43 PM</p>
-															<p class="mb-0">Iqamah: 8:43 PM</p>
+															<p class="mb-0" data-muezzin-begins>Begins: 8:43 PM</p>
+															<p class="mb-0" data-muezzin-iqamah>Iqamah: 8:43 PM</p>
 														</div><!-- Namaz Timing Cap -->
 													</div><!-- Namaz Timing Box -->
 												</div>
@@ -1172,11 +1214,11 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 				c-13.62-1.47-25.03-7.59-35.44-16.06c-16.04-13.04-28.3-29.56-41.61-45.12C18.72,302.43,10.67,292.41,0,285z" />
 															</g>
 														</svg>
-														<div
-															class="tq-namaz-timing-cap d-flex flex-column position-absolute">
+														<div class="tq-namaz-timing-cap d-flex flex-column position-absolute"
+															data-muezzin-prayer-card="isha">
 															<h4 class="mb-0">Isha</h4>
-															<p class="mb-0">Begins: 9:45 PM</p>
-															<p class="mb-0">Iqamah: 10:15 PM
+															<p class="mb-0" data-muezzin-begins>Begins: 9:45 PM</p>
+															<p class="mb-0" data-muezzin-iqamah>Iqamah: 10:15 PM
 															</p>
 														</div><!-- Namaz Timing Cap -->
 													</div><!-- Namaz Timing Box -->
@@ -1222,11 +1264,11 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 				c-13.62-1.47-25.03-7.59-35.44-16.06c-16.04-13.04-28.3-29.56-41.61-45.12C18.72,302.43,10.67,292.41,0,285z" />
 															</g>
 														</svg>
-														<div
-															class="tq-namaz-timing-cap d-flex flex-column position-absolute">
+														<div class="tq-namaz-timing-cap d-flex flex-column position-absolute"
+															data-muezzin-prayer-card="jummah">
 															<h4 class="mb-0">Jummah</h4>
-															<p class="mb-0">Begins: 12:30 PM</p>
-															<p class="mb-0">Iqamah: 01:30 PM</p>
+															<p class="mb-0" data-muezzin-begins>Begins: 12:30 PM</p>
+															<p class="mb-0" data-muezzin-iqamah>Iqamah: 01:30 PM</p>
 														</div><!-- Namaz Timing Cap -->
 													</div><!-- Namaz Timing Box -->
 												</div>
@@ -1276,9 +1318,11 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 												style="background-image: url(https://ik.imagekit.io/sajib4aqc/tq-support-caus-bg.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
 												<div
 													class="tq-support-cause-cap d-flex flex-column align-items-center text-center">
-													<h2 class="mb-0">Support us, we need your help.</h2>
-													<p class="mb-0">May Allah bless you! Thank you. Those who (in
-														charity) spend of their goods by night and by day</p>
+													<h2 class="mb-0">Support Our Mission of Education.</h2>
+													<p class="mb-0" style="line-height: 1.75;">Join us in sharing the
+														clear, practical guidance of the Qur'an with humanity. Your
+														support helps provide educational materials and resources to
+														those seeking a deeper understanding of the Divine message.</p>
 													<div
 														class="tq-support-cause-stats d-flex flex-column position-relative w-100">
 														<div class="progress rounded-pill w-100">
@@ -1287,12 +1331,12 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 														</div>
 														<div
 															class="tq-support-cause-stats-cap d-flex flex-wrap justify-content-between align-items-center w-100">
-															<span>Raised:<small>$</small>29000</span>
-															<span>Goal:<small>$</small>50000</span>
+															<span>Impact Reached.</span>
+															<span>Goal: 10,000 Readers.</span>
 														</div><!-- Support Cause Stats Cap -->
 													</div><!-- Support Cause Stats -->
-													<a class="tq-theme-btn tq-bg-theme rounded-pill"
-														href="#">Donate Now</a>
+													<a class="tq-theme-btn tq-bg-theme rounded-pill" href="#">Join the
+														Mission.</a>
 												</div>
 											</div><!-- Support Cause Box -->
 											<div class="tq-shape tq-shape-bottom text-center w-100"><svg
@@ -1334,7 +1378,9 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 
 							<section>
 								<div class="w-100 tq-pt-110 tq-gray-layer tq-opc8 tq-pb-120 position-relative">
-									<div class="tq-fixed-bg" style="background-image: url(https://ik.imagekit.io/sajib4aqc/tq-bg3.webp); background-repeat: no-repeat; background-position: left bottom; background-size: cover; filter: opacity(0.1);"></div>
+									<div class="tq-fixed-bg"
+										style="background-image: url(https://ik.imagekit.io/sajib4aqc/tq-bg3.webp); background-repeat: no-repeat; background-position: left bottom; background-size: cover; filter: opacity(0.1);">
+									</div>
 									<div class="container">
 										<div
 											class="tq-sec-title-wrapper d-flex flex-column align-items-center text-center position-relative w-100">
@@ -1352,7 +1398,8 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 												<div class="col-md-12 col-sm-12 col-lg-6 order-lg-1">
 													<div
 														class="tq-service-img mix-blend-difference-layer position-relative text-center w-100">
-														<img decoding="async" class="img-fluid" src="https://ik.imagekit.io/sajib4aqc/tq-feat-img2.png?updatedAt=1778704878178"
+														<img decoding="async" class="img-fluid"
+															src="https://ik.imagekit.io/sajib4aqc/tq-feat-img2.png?updatedAt=1778704878178"
 															alt="Service Image" loading="lazy">
 													</div><!-- Service Image -->
 												</div>
@@ -1402,13 +1449,13 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																	</g>
 																</svg><i class="flaticon-open-book" theme-clr"></i>
 															</span>
-															<h4 class="mb-0"><a
-																	href="#">Quran
+															<h4 class="mb-0"><a href="#">Quran
 																	Learning</a>
 															</h4>
-															<p class="mb-0">Provide rehab facility dolor sit amet,
-																consectetur adipisicing elit, sed do eiusmod tempor
-																inci...</p>
+															<p class="mb-0">We provide a fresh, accessible reading of
+																the Divine text that moves beyond ritual. Our goal is to
+																present the Qur'anic message as a living, practical
+																guide for modern life.</p>
 														</div><!-- Service Box -->
 
 
@@ -1456,13 +1503,12 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																	</g>
 																</svg><i class="flaticon-grave" theme-clr"></i>
 															</span>
-															<h4 class="mb-0"><a
-																	href="#">Funeral
-																	Service</a>
+															<h4 class="mb-0"><a href="#">Educational Workshops</a>
 															</h4>
-															<p class="mb-0">Provide rehab facility dolor sit amet,
-																consectetur adipisicing elit, sed do eiusmod tempor
-																inci...</p>
+															<p class="mb-0">Author Shamsuddin Waheed offers sessions
+																designed to make complex spiritual concepts easy to
+																grasp. These workshops focus on applying the Qur'an's
+																teachings to contemporary societal issues.</p>
 														</div><!-- Service Box -->
 
 													</div>
@@ -1513,13 +1559,12 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																	</g>
 																</svg><i class="flaticon-mosque" theme-clr"></i>
 															</span>
-															<h4 class="mb-0"><a
-																	href="#">Mosque
-																	Renovation</a>
+															<h4 class="mb-0"><a href="#">Community Mentorship</a>
 															</h4>
-															<p class="mb-0">Provide rehab facility dolor sit amet,
-																consectetur adipisicing elit, sed do eiusmod tempor
-																inci...</p>
+															<p class="mb-0">Engage in meaningful dialogue regarding
+																faith, identity, and the nature of the human soul. We
+																offer guidance to help individuals navigate a complex
+																world through the lens of the Qur'an.</p>
 														</div><!-- Service Box -->
 
 														<div
@@ -1566,12 +1611,12 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 																	</g>
 																</svg><i class="flaticon-begging" theme-clr"></i>
 															</span>
-															<h4 class="mb-0"><a
-																	href="#">Help Poor</a>
+															<h4 class="mb-0"><a href="#">Social Justice Advocacy</a>
 															</h4>
-															<p class="mb-0">Provide rehab facility dolor sit amet,
-																consectetur adipisicing elit, sed do eiusmod tempor
-																inci...</p>
+															<p class="mb-0">Our work highlights the Qur'anic stance on
+																economic justice and racism. We provide resources to
+																help humanity recognize unity and fairness as dictated
+																by Divine teaching.</p>
 														</div><!-- Service Box -->
 
 													</div>
@@ -1687,8 +1732,10 @@ c1.92,0.02,3.63-1.67,3.65-3.61C53.62,33.99,51.94,32.29,50,32.27z">
 												<span>The Five Pillars of Islam</span>
 												<h2 class="mb-0">Pillars of Islam</h2>
 											</div>
-											<p class="mb-0">Nibh vel velit auctor aliquet. Aenean ituin. This is
-												Photoshops version of Photoshops sion of Lorem vel velit aucto.</p>
+											<p class="mb-0">The five pillars are the foundational acts of worship that
+												shape a believer's life. In Engaging The Qur'an, we explore how these
+												rituals move beyond tradition to become a living framework for spiritual
+												growth and social justice in the modern world.</p>
 										</div>
 										<div class="tq-pillars-wrapper position-relative w-100">
 											<div class="row justify-content-center">
@@ -1711,17 +1758,21 @@ C502.07,180.55,518.51,190.36,526,212z" />
 															</svg>
 															<div
 																class="tq-pillar-head d-flex flex-column align-items-center w-100">
-																<img decoding="async" class="img-fluid" src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
+																<img decoding="async" class="img-fluid"
+																	src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
 																	alt="(Faith)">
 																<h4 class="mb-0">Shahadah <br />(Faith)</h4>
 															</div><!-- Pillar Head -->
 															<div
 																class="tq-pillar-body d-flex flex-column align-items-center w-100">
 																<span class="rounded-circle"><img
-																		class="img-fluid rounded-circle" src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img1.webp"
+																		class="img-fluid rounded-circle"
+																		src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img1.webp"
 																		alt="Shahadah" loading="lazy"></span>
-																<p class="mb-0">To Believe in no God but Allah and that
-																	Muhammad is his prophet.</p>
+																<p class="mb-0">The sincere testimony of faith,
+																	affirming the oneness of the Divine and the guidance
+																	provided through His messenger. It is the foundation
+																	of a purposeful life.</p>
 															</div><svg
 																class="fill-tq-color2 position-absolute tq-shape-bottom"
 																xmlns="http://www.w3.org/2000/svg"
@@ -1758,17 +1809,21 @@ C502.07,180.55,518.51,190.36,526,212z" />
 															</svg>
 															<div
 																class="tq-pillar-head d-flex flex-column align-items-center w-100">
-																<img decoding="async" class="img-fluid" src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
+																<img decoding="async" class="img-fluid"
+																	src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
 																	alt="(Prayer)">
 																<h4 class="mb-0">Salah <br />(Prayer)</h4>
 															</div><!-- Pillar Head -->
 															<div
 																class="tq-pillar-body d-flex flex-column align-items-center w-100">
 																<span class="rounded-circle"><img
-																		class="img-fluid rounded-circle" src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img2.webp"
+																		class="img-fluid rounded-circle"
+																		src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img2.webp"
 																		alt="Salah" loading="lazy"></span>
-																<p class="mb-0">To Believe in no God but Allah and that
-																	Muhammad is his prophet.</p>
+																<p class="mb-0">A daily spiritual anchor that provides
+																	moments of peace and reflection. It serves as a
+																	direct connection to the Creator, offering strength
+																	for life's challenges.</p>
 															</div><svg
 																class="fill-tq-color2 position-absolute tq-shape-bottom"
 																xmlns="http://www.w3.org/2000/svg"
@@ -1805,17 +1860,21 @@ C502.07,180.55,518.51,190.36,526,212z" />
 															</svg>
 															<div
 																class="tq-pillar-head d-flex flex-column align-items-center w-100">
-																<img decoding="async" class="img-fluid" src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
+																<img decoding="async" class="img-fluid"
+																	src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
 																	alt="(Fasting)">
 																<h4 class="mb-0">Sawm <br />(Fasting)</h4>
 															</div><!-- Pillar Head -->
 															<div
 																class="tq-pillar-body d-flex flex-column align-items-center w-100">
 																<span class="rounded-circle"><img
-																		class="img-fluid rounded-circle" src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img3.webp"
+																		class="img-fluid rounded-circle"
+																		src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img3.webp"
 																		alt="Sawm" loading="lazy"></span>
-																<p class="mb-0">To Believe in no God but Allah and that
-																	Muhammad is his prophet.</p>
+																<p class="mb-0">A practice of self-discipline and
+																	empathy during Ramadan. It purifies the soul and
+																	heightens our awareness of the needs of the less
+																	fortunate in our global community.</p>
 															</div><svg
 																class="fill-tq-color2 position-absolute tq-shape-bottom"
 																xmlns="http://www.w3.org/2000/svg"
@@ -1852,17 +1911,21 @@ C502.07,180.55,518.51,190.36,526,212z" />
 															</svg>
 															<div
 																class="tq-pillar-head d-flex flex-column align-items-center w-100">
-																<img decoding="async" class="img-fluid" src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
+																<img decoding="async" class="img-fluid"
+																	src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
 																	alt="(Almsgiving)">
 																<h4 class="mb-0">Zakat <br />(Almsgiving)</h4>
 															</div><!-- Pillar Head -->
 															<div
 																class="tq-pillar-body d-flex flex-column align-items-center w-100">
 																<span class="rounded-circle"><img
-																		class="img-fluid rounded-circle" src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img4.webp"
+																		class="img-fluid rounded-circle"
+																		src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img4.webp"
 																		alt="Zakat" loading="lazy"></span>
-																<p class="mb-0">To Believe in no God but Allah and that
-																	Muhammad is his prophet.</p>
+																<p class="mb-0">The obligatory act of charity that
+																	ensures economic justice. It teaches us that our
+																	wealth is a trust to be shared for the benefit and
+																	uplifting of all humanity.</p>
 															</div><svg
 																class="fill-tq-color2 position-absolute tq-shape-bottom"
 																xmlns="http://www.w3.org/2000/svg"
@@ -1899,17 +1962,21 @@ C502.07,180.55,518.51,190.36,526,212z" />
 															</svg>
 															<div
 																class="tq-pillar-head d-flex flex-column align-items-center w-100">
-																<img decoding="async" class="img-fluid" src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
+																<img decoding="async" class="img-fluid"
+																	src="https://ik.imagekit.io/sajib4aqc/pillar-1.png"
 																	alt="(Pilgrimage)">
 																<h4 class="mb-0">Hajj <br />(Pilgrimage)</h4>
 															</div><!-- Pillar Head -->
 															<div
 																class="tq-pillar-body d-flex flex-column align-items-center w-100">
 																<span class="rounded-circle"><img
-																		class="img-fluid rounded-circle" src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img5.webp"
+																		class="img-fluid rounded-circle"
+																		src="https://ik.imagekit.io/sajib4aqc/tq-pillar-img5.webp"
 																		alt="Hajj" loading="lazy"></span>
-																<p class="mb-0">To Believe in no God but Allah and that
-																	Muhammad is his prophet.</p>
+																<p class="mb-0">A profound journey of unity and
+																	equality. It brings people of all backgrounds
+																	together to witness the ultimate message of
+																	brotherhood and submission to the Divine.</p>
 															</div><svg
 																class="fill-tq-color2 position-absolute tq-shape-bottom"
 																xmlns="http://www.w3.org/2000/svg"
@@ -1951,377 +2018,7 @@ C502.07,180.55,518.51,190.36,526,212z" />
 			</div>
 		</div>
 	</section>
-	<section
-		class="elementor-section elementor-top-section elementor-element elementor-element-ae5ede9 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default"
-		data-id="ae5ede9" data-element_type="section" data-e-type="section"
-		data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
-		<div class="elementor-container elementor-column-gap-no">
-			<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-13501fd"
-				data-id="13501fd" data-element_type="column" data-e-type="column">
-				<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-element elementor-element-8eb40f6 elementor-widget elementor-widget-Travel_Packages"
-						data-id="8eb40f6" data-element_type="widget" data-e-type="widget"
-						data-widget_type="Travel_Packages.default">
-						<div class="elementor-widget-container">
 
-
-							<section>
-								<div
-									class="w-100 tq-pt-120 tq-gray-layer tq-opc9 tq-pb-120 overflow-hidden position-relative">
-
-									<div class="tq-fixed-bg" style="background-image: url(https://ik.imagekit.io/sajib4aqc/tq-bg3.webp); background-repeat: no-repeat; background-position: left bottom; background-size: cover; filter: opacity(0.1);"></div>
-
-									<svg class="fill-theme tq-rg-shape position-absolute"
-										xmlns="http://www.w3.org/2000/svg" viewBox="0 0 571 568">
-										<g>
-											<path d="M0,285c0-0.67,0-1.33,0-2c8.61-5.65,15.18-13.46,21.86-21.08c12.95-14.78,24.65-30.67,38.92-44.27
-						c12.39-11.81,26.05-21.27,43.81-23.07c5.21-0.53,7.8-3.85,8.14-9.17c0.14-2.32,0-4.67,0.07-7c0.61-20.09,8.49-36.79,23.69-49.91
-						c13.47-11.63,29.32-16.72,47-16.55c8.94,0.08,11.26-1.9,12.49-10.58c1.22-8.56,4.35-16.37,9-23.63
-						c10.24-15.99,24.68-27.83,38.95-39.88C258.17,25.84,273.4,14.89,285,0c0.33,0,0.67,0,1,0c6.55,8.74,14.71,15.85,22.97,22.88
-						c15.09,12.85,31.11,24.65,44.7,39.18c10.15,10.85,18.56,22.71,21.11,37.84c1.86,11.03,3.11,11.91,14.23,12.05
-						c22.71,0.29,41.49,8.96,55.43,27.06c10.02,13.02,14.41,27.95,13.81,44.42c-0.26,7.06,2.42,10.55,8.64,11.21
-						c13.63,1.46,25.04,7.58,35.44,16.05c16.03,13.05,28.27,29.59,41.62,45.12c8.35,9.71,16.32,19.82,27.04,27.18c0,0.67,0,1.33,0,2
-						c-3.95,2-6.83,5.29-9.91,8.32c-14.07,13.8-25.61,29.82-38.79,44.4c-15.6,17.24-31.93,33.31-56.87,35.93
-						c-4.4,0.46-6.9,3.84-7.16,8.41c-0.14,2.49,0.01,5-0.07,7.5c-0.6,20.1-8.54,36.79-23.69,49.92c-13.73,11.91-29.96,16.89-48,16.59
-						c-7.18-0.12-10.55,2.32-11.23,8.56c-1.41,12.92-7.15,23.81-15.07,33.76c-9.61,12.09-21.44,21.85-33.15,31.75
-						c-14.23,12.03-29.54,22.9-41.07,37.86c-0.33,0-0.67,0-1,0c-6.7-8.83-14.98-16.06-23.36-23.19c-15.09-12.85-31.09-24.66-44.67-39.22
-						c-10.99-11.78-19.64-24.78-21.33-41.43c-0.53-5.23-3.87-7.84-9.15-8.09c-1.83-0.09-3.67,0.06-5.5-0.01
-						c-27.59-1.15-48.35-13.34-61.23-38.08c-5.52-10.6-7.38-21.98-7.04-33.87c0.19-6.69-2.56-10.1-8.63-10.75
-						c-13.62-1.47-25.03-7.59-35.44-16.06c-16.04-13.04-28.3-29.56-41.61-45.12C18.72,302.43,10.67,292.41,0,285z" />
-										</g>
-									</svg>
-									<div class="container">
-										<div class="tq-package-wrapper position-relative w-100">
-											<div class="row align-items-center">
-												<div class="col-md-12 col-sm-12 col-lg-5">
-													<div
-														class="tq-sec-title-wrapper d-flex align-items-center justify-content-between position-relative w-100">
-														<div class="tq-sec-title d-flex flex-column">
-															<span>Hajj Umrah Travel Packages</span>
-															<h2 class="mb-0">Hajj & Umrah Travel Packages</h2>
-														</div><!-- Section Title -->
-													</div><!-- Section Title Wrapper -->
-													<ul class="tq-nav-tab nav nav-tabs rounded-pill">
-														<li class="nav-item">
-															<button class="nav-link active" data-bs-toggle="tab"
-																data-bs-target="#tq-tab1" type="button">HAJJ</button>
-														</li>
-														<li class="nav-item">
-															<button class="nav-link" data-bs-toggle="tab"
-																data-bs-target="#tq-tab2" type="button">UMRAH</button>
-														</li>
-													</ul>
-													<div
-														class="tq-consult-box-wrap d-flex flex-column align-items-start position-relative w-100">
-														<h4 class="mb-0">Free Consulting</h4>
-														<div class="tq-consult-box d-flex align-items-center">
-															<span
-																class="tq-bg-theme d-inline-flex justify-content-center align-items-center rounded-circle"><svg
-																	class="fill-white"
-																	xmlns="http://www.w3.org/2000/svg"
-																	viewBox="0 0 100 100">
-																	<g>
-																		<path d="M72.64,97.5c-15.09,0-30.18,0-45.27,0c-0.26-0.1-0.52-0.21-0.78-0.29c-2.64-0.78-4.54-2.44-5.74-4.9
-                                        		c-0.78-1.6-0.92-3.32-0.92-5.06c0-12.31,0-24.62,0-36.92c0-12.68,0-25.36,0-38.04c0-2.6,0.7-4.93,2.46-6.9
-                                        		c1.35-1.51,3.1-2.31,4.99-2.88c15.09,0,30.18,0,45.27,0c0.26,0.1,0.52,0.21,0.78,0.29c2.65,0.78,4.53,2.46,5.74,4.91
-                                        		c0.77,1.56,0.92,3.26,0.92,4.97c0,9.34,0,18.68,0,28.02c0,15.58,0,31.17,0,46.75c0,2.68-0.59,5.14-2.46,7.18
-                                        		C76.26,96.11,74.53,96.93,72.64,97.5z M72.63,47.49C72.63,47.49,72.63,47.49,72.63,47.49c0.01-3.53,0.01-7.05,0.01-10.58
-                                        		c0-5.94-0.05-11.87,0.02-17.81c0.04-3.51-2.48-6.12-5.82-6.13c-11.22-0.03-22.45-0.02-33.67,0c-1.93,0-3.53,0.81-4.71,2.38
-                                        		c-0.97,1.29-1.1,2.77-1.1,4.31c0.01,18.49,0.01,36.98,0.01,55.47c0,0.43,0.01,0.87,0.03,1.3c0.17,3.06,2.55,5.4,5.63,5.41
-                                        		c11.32,0.03,22.64,0.01,33.95,0.01c0.88,0,1.72-0.21,2.5-0.62c2.25-1.2,3.18-3.12,3.17-5.64C72.6,66.22,72.63,56.86,72.63,47.49z
-                                        		 M49.97,91.29c1.15,0.02,2.33-1.14,2.36-2.3c0.02-1.16-1.13-2.33-2.3-2.35c-1.16-0.02-2.33,1.12-2.36,2.29
-                                        		C47.65,90.08,48.81,91.26,49.97,91.29z" />
-																	</g>
-																</svg></span>
-															<div
-																class="tq-consult-box-inner d-flex flex-column align-items-start">
-																<span>Get Free Travel Guides</span>
-																<a href="tel:1800-123-456-7" title="">1800-123-456-7</a>
-															</div><!-- Consult Box Inner -->
-														</div><!-- Consult Box -->
-													</div><!-- Consult Box Wrap -->
-												</div>
-												<div class="col-md-12 col-sm-12 col-lg-7">
-													<div class="tq-tab-content tab-content">
-														<div class="tab-pane fade show active" id="tq-tab1">
-															<div
-																class="tq-package-boxes position-relative d-flex flex-column align-items-end w-100">
-																<div
-																	class="tq-package-box d-flex flex-wrap align-items-center position-relative w-100">
-																	<div
-																		class="tq-package-head d-flex flex-column align-items-start tq-bg-color2">
-																		<h3 class="mb-0">Basic</h3>
-																		<p class="mb-0">7 Days 08 Nights</p>
-																		<span>/ 1 PERSON</span>
-																	</div><!-- Package Head -->
-																	<div
-																		class="tq-package-body d-flex flex-column align-items-start">
-																		<ul
-																			class="d-flex flex-column align-items-start list-unstyled mb-0">
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg>03 Nights Makkah
-																			</li>
-
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg>04 Nights Madinah
-																			</li>
-
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg>5 star accommodation
-																			</li>
-
-																		</ul>
-																		<a class="tq-theme-btn tq-bg-theme rounded-pill"
-																			href="#">Purchase
-																			Now</a>
-																	</div><!-- Package Body -->
-																</div><!-- Package Box -->
-																<div
-																	class="tq-package-box d-flex flex-wrap align-items-center position-relative w-100">
-																	<div
-																		class="tq-package-head d-flex flex-column align-items-start tq-bg-color2">
-																		<h3 class="mb-0">Classic</h3>
-																		<p class="mb-0">15 Days 14 Nights</p>
-																		<span>/ 1 PERSON</span>
-																	</div><!-- Package Head -->
-																	<div
-																		class="tq-package-body d-flex flex-column align-items-start">
-																		<ul
-																			class="d-flex flex-column align-items-start list-unstyled mb-0">
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg>08 Nights Makkah
-																			</li>
-
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg>07 Nights Madinah
-																			</li>
-
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg>5 star accommodation
-																			</li>
-
-																		</ul>
-																		<a class="tq-theme-btn tq-bg-theme rounded-pill"
-																			href="#">Purchase
-																			Now</a>
-																	</div><!-- Package Body -->
-																</div><!-- Package Box -->
-															</div><!-- Package Boxes-->
-														</div>
-														<div class="tab-pane fade" id="tq-tab2">
-
-
-															<div
-																class="tq-package-boxes position-relative d-flex flex-column align-items-end w-100">
-																<div
-																	class="tq-package-box d-flex flex-wrap align-items-center position-relative w-100">
-																	<div
-																		class="tq-package-head d-flex flex-column align-items-start tq-bg-color2">
-																		<h3 class="mb-0">Basic</h3>
-																		<p class="mb-0">7 Days 08 Nights</p>
-																		<span>/ 1 PERSON</span>
-																	</div><!-- Package Head -->
-																	<div
-																		class="tq-package-body d-flex flex-column align-items-start">
-																		<ul
-																			class="d-flex flex-column align-items-start list-unstyled mb-0">
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg> 08 Nights Makkah
-																			</li>
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg> 07 Nights Madinah
-																			</li>
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg> 5 star accommodation
-																			</li>
-																		</ul>
-																		<a class="tq-theme-btn tq-bg-theme rounded-pill"
-																			href="#">Purchase
-																			Now</a>
-																	</div><!-- Package Body -->
-																</div><!-- Package Box -->
-
-															</div><!-- Package Boxes-->
-
-
-															<div
-																class="tq-package-boxes position-relative d-flex flex-column align-items-end w-100">
-																<div
-																	class="tq-package-box d-flex flex-wrap align-items-center position-relative w-100">
-																	<div
-																		class="tq-package-head d-flex flex-column align-items-start tq-bg-color2">
-																		<h3 class="mb-0">Classic</h3>
-																		<p class="mb-0">15 Days 15 Nights</p>
-																		<span>/ 1 PERSON</span>
-																	</div><!-- Package Head -->
-																	<div
-																		class="tq-package-body d-flex flex-column align-items-start">
-																		<ul
-																			class="d-flex flex-column align-items-start list-unstyled mb-0">
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg> 08 Nights Makkah
-																			</li>
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg> 07 Nights Madinah
-																			</li>
-
-																			<li>
-																				<svg class="fill-tq-color5"
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 100 100">
-																					<g>
-																						<path d="M11.8,45.9c3.14,0.03,5.32,0.8,7.15,2.45c5.75,5.19,11.48,10.4,17.21,15.61c1.54,1.39,2.55,1.37,3.94-0.2
-						c7.27-8.19,14.52-16.39,21.78-24.59c6.86-7.75,13.72-15.5,20.57-23.26c3.03-3.43,6.06-6.86,9.1-10.28
-						c0.26-0.29,0.51-0.58,0.78-0.86c1.24-1.28,2.83-1.46,4.06-0.46c1.26,1.02,1.45,2.52,0.5,4.04c-11.18,18-22.36,36.01-33.54,54.01
-						c-5.98,9.63-11.96,19.26-17.94,28.89c-2.05,3.3-4.91,5.18-8.89,5.08c-2.48-0.07-4.63-1.03-6.24-2.89c-2.53-2.93-4.95-5.96-7.4-8.96
-						c-5.93-7.25-11.84-14.52-17.78-21.76c-4.6-5.6-2.97-13.23,3.46-16.04C9.82,46.14,11.12,45.87,11.8,45.9z" />
-																					</g>
-																				</svg> 5 star accommodation
-																			</li>
-																		</ul>
-																		<a class="tq-theme-btn tq-bg-theme rounded-pill"
-																			href="#">Purchase
-																			Now</a>
-																	</div><!-- Package Body -->
-																</div><!-- Package Box -->
-
-															</div><!-- Package Boxes-->
-														</div>
-													</div>
-												</div>
-											</div>
-										</div><!-- Package Wrapper -->
-									</div>
-								</div>
-							</section>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section
 		class="elementor-section elementor-top-section elementor-element elementor-element-8660641 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default"
 		data-id="8660641" data-element_type="section" data-e-type="section"
@@ -2342,8 +2039,9 @@ C502.07,180.55,518.51,190.36,526,212z" />
 										<div
 											class="tq-sec-title-wrapper d-flex flex-column align-items-center text-center position-relative w-100">
 											<div class="tq-sec-title d-flex flex-column align-items-center text-center">
-												<img decoding="async" class="img-fluid" src="https://ik.imagekit.io/sajib4aqc/shape2.png?updatedAt=1778706964381" alt="Recent Articles"
-													loading="lazy">
+												<img decoding="async" class="img-fluid"
+													src="https://ik.imagekit.io/sajib4aqc/shape2.png?updatedAt=1778706964381"
+													alt="Recent Articles" loading="lazy">
 												<span>Recent Articles</span>
 												<h2 class="mb-0">Tips & Guide</h2>
 											</div>
@@ -2360,22 +2058,21 @@ C502.07,180.55,518.51,190.36,526,212z" />
 																class="tq-bg-theme d-flex flex-column align-items-center position-absolute text-center">01<i>May,
 																	2026</i></span>
 															<a href="javascript:void(0);"><img class="img-fluid w-100"
-																	src="https://ik.imagekit.io/sajib4aqc/blog-2.jpg" alt="Islamic Religious Practices and Rituals"
+																	src="https://ik.imagekit.io/sajib4aqc/blog-2.jpg"
+																	alt="Islamic Religious Practices and Rituals"
 																	loading="lazy"></a>
 														</div><!-- Recent Post Image -->
 														<div
 															class="tq-recent-cap d-flex flex-column position-relative w-100">
-															<h4 class="mb-0"><a
-																	href="#">Islamic
-																	Religious Practices and Rituals</a></h4>
+															<h4 class="mb-0"><a href="#">What Does the Qur'an Say About
+																	Justice?</a></h4>
 															<ul
 																class="tq-post-meta d-flex align-items-center list-unstyled mb-0">
 																<li class="tq-text-theme"><a itemprop="url"
 																		href="#">Blog
 																		List</a>
 																</li>
-																<li><a
-																		href="#">2
+																<li><a href="#">2
 																		Comments </a></li>
 															</ul><!-- Post Meta -->
 														</div><!-- Recent Post Cap -->
@@ -2391,22 +2088,21 @@ C502.07,180.55,518.51,190.36,526,212z" />
 																class="tq-bg-theme d-flex flex-column align-items-center position-absolute text-center">05<i>May,
 																	2026</i></span>
 															<a href="javascript:void(0);"><img class="img-fluid w-100"
-																	src="https://ik.imagekit.io/sajib4aqc/blog-1.jpg" alt="Islamic Religious Practices and Rituals"
+																	src="https://ik.imagekit.io/sajib4aqc/blog-1.jpg"
+																	alt="Islamic Religious Practices and Rituals"
 																	loading="lazy"></a>
 														</div><!-- Recent Post Image -->
 														<div
 															class="tq-recent-cap d-flex flex-column position-relative w-100">
-															<h4 class="mb-0"><a
-																	href="#">Islamic
-																	Religious Practices and Rituals</a></h4>
+															<h4 class="mb-0"><a href="#">The Qur'an and the Human
+																	Heart</a></h4>
 															<ul
 																class="tq-post-meta d-flex align-items-center list-unstyled mb-0">
 																<li class="tq-text-theme"><a itemprop="url"
 																		href="#">Blog
 																		List</a>
 																</li>
-																<li><a
-																		href="#">2
+																<li><a href="#">2
 																		Comments </a></li>
 															</ul><!-- Post Meta -->
 														</div><!-- Recent Post Cap -->
@@ -2422,22 +2118,21 @@ C502.07,180.55,518.51,190.36,526,212z" />
 																class="tq-bg-theme d-flex flex-column align-items-center position-absolute text-center">11<i>may,
 																	2026</i></span>
 															<a href="javascript:void(0);"><img class="img-fluid w-100"
-																	src="https://ik.imagekit.io/sajib4aqc/blog-3.jpg" alt="Islamic Religious Practices and Rituals"
+																	src="https://ik.imagekit.io/sajib4aqc/blog-3.jpg"
+																	alt="Islamic Religious Practices and Rituals"
 																	loading="lazy"></a>
 														</div><!-- Recent Post Image -->
 														<div
 															class="tq-recent-cap d-flex flex-column position-relative w-100">
-															<h4 class="mb-0"><a
-																	href="#">Islamic
-																	Religious Practices and Rituals</a></h4>
+															<h4 class="mb-0"><a href="#">Understanding Surah
+																	Al-Fatiha</a></h4>
 															<ul
 																class="tq-post-meta d-flex align-items-center list-unstyled mb-0">
 																<li class="tq-text-theme"><a itemprop="url"
 																		href="#">Blog
 																		List</a>
 																</li>
-																<li><a
-																		href="#">2
+																<li><a href="#">2
 																		Comments </a></li>
 															</ul><!-- Post Meta -->
 														</div><!-- Recent Post Cap -->
@@ -2446,8 +2141,7 @@ C502.07,180.55,518.51,190.36,526,212z" />
 											</div>
 										</div>
 										<div class="tq-view-all d-inline-block tq-mt-55 text-center w-100">
-											<a class="tq-theme-btn tq-bg-theme rounded-pill"
-												href="#">Read More
+											<a class="tq-theme-btn tq-bg-theme rounded-pill" href="#">Read More
 												News</a>
 										</div>
 									</div>
@@ -2504,32 +2198,40 @@ C502.07,180.55,518.51,190.36,526,212z" />
 												<div class="col-md-6 col-sm-6 col-lg-4">
 													<div class="tq-follow-boxes d-flex position-relative w-100">
 														<div class="tq-follow-box d-flex flex-column">
-															<a href="#"><img class="img-fluid w-100" src="https://ik.imagekit.io/sajib4aqc/tq-insta-img1.webp" alt="tq-insta-img1"
-																	loading="lazy"></a>
-															<a href="#"><img class="img-fluid w-100" src="https://ik.imagekit.io/sajib4aqc/tq-insta-img2.webp" alt="tq-insta-img2"
-																	loading="lazy"></a>
+															<a href="#"><img class="img-fluid w-100"
+																	src="https://ik.imagekit.io/sajib4aqc/tq-insta-img1.webp"
+																	alt="tq-insta-img1" loading="lazy"></a>
+															<a href="#"><img class="img-fluid w-100"
+																	src="https://ik.imagekit.io/sajib4aqc/tq-insta-img2.webp"
+																	alt="tq-insta-img2" loading="lazy"></a>
 														</div>
 														<div class="tq-follow-box tq-mt-60 d-flex flex-column">
-															<a href="#"><img class="img-fluid w-100" src="https://ik.imagekit.io/sajib4aqc/tq-insta-img3.webp" alt="tq-insta-img3"
-																	loading="lazy"></a>
-															<a href="#"><img class="img-fluid w-100" src="https://ik.imagekit.io/sajib4aqc/tq-insta-img4.webp" alt="tq-insta-img4"
-																	loading="lazy"></a>
+															<a href="#"><img class="img-fluid w-100"
+																	src="https://ik.imagekit.io/sajib4aqc/tq-insta-img3.webp"
+																	alt="tq-insta-img3" loading="lazy"></a>
+															<a href="#"><img class="img-fluid w-100"
+																	src="https://ik.imagekit.io/sajib4aqc/tq-insta-img4.webp"
+																	alt="tq-insta-img4" loading="lazy"></a>
 														</div>
 													</div><!-- Follow Boxes -->
 												</div>
 												<div class="col-md-6 col-sm-6 col-lg-4 order-lg-1">
 													<div class="tq-follow-boxes d-flex position-relative w-100">
 														<div class="tq-follow-box tq-mt-60 d-flex flex-column">
-															<a href="#"><img class="img-fluid w-100" src="https://ik.imagekit.io/sajib4aqc/tq-insta-img5.webp" alt=""
-																	loading="lazy"></a>
-															<a href="#"><img class="img-fluid w-100" src="https://ik.imagekit.io/sajib4aqc/tq-insta-img6.webp" alt=""
-																	loading="lazy"></a>
+															<a href="#"><img class="img-fluid w-100"
+																	src="https://ik.imagekit.io/sajib4aqc/tq-insta-img5.webp"
+																	alt="" loading="lazy"></a>
+															<a href="#"><img class="img-fluid w-100"
+																	src="https://ik.imagekit.io/sajib4aqc/tq-insta-img6.webp"
+																	alt="" loading="lazy"></a>
 														</div>
 														<div class="tq-follow-box d-flex flex-column">
-															<a href="#"><img class="img-fluid w-100" src="https://ik.imagekit.io/sajib4aqc/tq-insta-img7.webp" alt=""
-																	loading="lazy"></a>
-															<a href="#"><img class="img-fluid w-100" src="https://ik.imagekit.io/sajib4aqc/tq-insta-img8.webp" alt=""
-																	loading="lazy"></a>
+															<a href="#"><img class="img-fluid w-100"
+																	src="https://ik.imagekit.io/sajib4aqc/tq-insta-img7.webp"
+																	alt="" loading="lazy"></a>
+															<a href="#"><img class="img-fluid w-100"
+																	src="https://ik.imagekit.io/sajib4aqc/tq-insta-img8.webp"
+																	alt="" loading="lazy"></a>
 														</div>
 													</div><!-- Follow Boxes -->
 												</div>
@@ -2556,8 +2258,8 @@ C502.07,180.55,518.51,190.36,526,212z" />
 				<div
 					class="tq-sec-title-wrapper tq-sec-title-left-icon mb-0 d-flex align-items-center justify-content-between position-relative w-100">
 					<div class="tq-sec-title d-flex flex-column">
-						<svg xmlns="http://www.w3.org/2000/svg" class="fill-theme position-absolute" viewBox="0 0 100 100"
-							width="100" height="100">
+						<svg xmlns="http://www.w3.org/2000/svg" class="fill-theme position-absolute"
+							viewBox="0 0 100 100" width="100" height="100">
 							<g>
 								<path
 									d="M40.61,2.5c-11.75,8.41-18.84,19.25-19.44,33.65C20.7,47.44,24.41,57.39,32.1,65.68c9.14,9.85,20.59,14.35,33.93,13.19                                       c13.33-1.15,23.48-8.03,31.24-18.77c-1.52,7.41-4.72,14-9.52,19.79c-8.04,9.7-18.31,15.56-30.82,17.19                                       C29.3,100.67,5.76,80.58,3.02,54.81C0.03,26.61,20.34,6.35,40.61,2.5z"
@@ -2612,8 +2314,9 @@ c11.74,1.01,18.55,6.68,21.6,17.95c0.69,2.54,1.86,4.14,4.45,4.71C176.75,63.77,180
 
 							<div class="tq-widget-box d-flex flex-column position-relative w-100">
 								<h4 class="mb-0">Information</h4>
-								<p class="mb-0">Elit duis volutpat ligula nulla a getmolestie mi consectetur auctor ugue
-									ac tincidunt, var ius felis et, augue lorem. Aliquam accumsan fringilla.
+								<p class="mb-0">Join our community dedicated to understanding the Qur'an's message
+									for humanity. Sign up for updates, new releases, and educational
+									materials.
 								</p>
 							</div>
 						</div>

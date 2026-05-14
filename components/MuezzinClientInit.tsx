@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Swiper from "swiper";
 import { Autoplay, Pagination } from "swiper/modules";
+import { initMuezzinPrayerTimes } from "@/lib/muezzin-prayer-times";
 
 const SIDE_MENU_BACKDROP_CLASS = "tq-side-menu-backdrop";
 
@@ -33,6 +34,9 @@ export function MuezzinClientInit() {
     }
 
     void import("bootstrap/dist/js/bootstrap.bundle.min.js");
+
+    const prayerAbort = new AbortController();
+    void initMuezzinPrayerTimes(prayerAbort.signal);
 
     const panel = document.querySelector<HTMLElement>(".tq-side-menu");
     let backdrop = document.querySelector<HTMLElement>(`.${SIDE_MENU_BACKDROP_CLASS}`);
@@ -81,6 +85,7 @@ export function MuezzinClientInit() {
     document.addEventListener("keydown", onKeyDown);
 
     return () => {
+      prayerAbort.abort();
       swiper?.destroy(true, true);
       backdrop.removeEventListener("click", closeMenu);
       document.removeEventListener("click", onDocClick, true);
