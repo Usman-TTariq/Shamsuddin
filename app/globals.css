@@ -10,6 +10,14 @@
   scroll-margin-top: 6.25rem;
 }
 
+/* About section YouTube embed: shorter on small screens */
+@media (max-width: 639px) {
+  iframe.tq-about-youtube-embed {
+    height: 325px !important;
+    max-width: 100%;
+  }
+}
+
 /*
   Theme stacks .tq-fixed-bg at z-index:-2 and .tq-secondary-layer::before at z-index:-1,
   so the tinted ::before fully covers the background image. Lift fixed-bg + content so the image shows.
@@ -89,6 +97,25 @@ body.tq-side-menu-open {
 .tq-follow-ig-handle:hover,
 .tq-follow-ig-handle:focus {
   color: #fff !important;
+}
+
+/* Follow heading: line break only on small screens; 18px type on mobile */
+.tq-follow-heading-br {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .tq-follow-heading {
+    font-size: 18px !important;
+  }
+
+  .tq-follow-heading .tq-follow-ig-handle {
+    font-size: inherit !important;
+  }
+
+  .tq-follow-heading-br {
+    display: block !important;
+  }
 }
 
 /* Hero home: theme tq-pt-270 on desktop; on small screens use tq-pt-100 spacing (6.25rem). max-width 639px ≈ Tailwind max-sm. */
