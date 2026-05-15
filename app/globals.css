@@ -93,10 +93,38 @@ body.tq-side-menu-open {
   color: #db9e30 !important;
 }
 
+/* Footer grid: columns may overflow adjacent cells without min-width:0 (flex default). */
+footer .tq-footer-body .row > [class*="col-"] {
+  min-width: 0;
+}
+
+footer .tq-footer-body .tq-widget-box {
+  min-width: 0;
+}
+
+/* Contact row: icon + email flex row — let the link shrink and wrap inside its column. */
+footer .tq-cont-list > li {
+  align-items: flex-start;
+}
+
+footer .tq-cont-list > li > a {
+  min-width: 0;
+  flex: 1 1 0%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 /* Follow block: Instagram @ handle — white on hover/focus */
 .tq-follow-ig-handle:hover,
 .tq-follow-ig-handle:focus {
   color: #fff !important;
+}
+
+/* Instagram @ handle: theme h2 is ~50px; scale handle to 36px when viewport ≤1400px */
+@media (max-width: 1400px) {
+  .tq-follow-heading .tq-follow-ig-handle {
+    font-size: 36px !important;
+  }
 }
 
 /* Follow heading: line break only on small screens; 18px type on mobile */
