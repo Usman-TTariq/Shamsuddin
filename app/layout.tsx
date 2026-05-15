@@ -5,8 +5,8 @@ import { applyWpContentPathsToHtml } from "@/lib/wp-public-paths";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Muezzin – Islamic Center WordPress Theme",
-  description: "Islamic Center WordPress Theme",
+  title: "Imam Shams - Islamic Center And Book",
+  description: "Islamic Center And Book",
 };
 
 const BODY_CLASS =
