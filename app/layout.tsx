@@ -5,8 +5,8 @@ import { applyWpContentPathsToHtml } from "@/lib/wp-public-paths";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Imam Shams - Islamic Center And Book",
-  description: "Islamic Center And Book",
+  title: "Shamsuddin Waheed - Official Author Website & Islamic Guide",
+  description: "Engaging The Quran by scholar Shamsuddin Waheed. Move beyond ritual and discover the Divine text as a practical guide for modern life's challenges.",
 };
 
 const BODY_CLASS =
