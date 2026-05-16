@@ -19,7 +19,7 @@ function resolveMetadataBase(): URL | undefined {
     }
   }
   const vercel = process.env.VERCEL_URL?.trim();
-  if (vercel) {
+  if (vercel) { 
     try {
       return new URL(`https://${vercel}/`);
     } catch {

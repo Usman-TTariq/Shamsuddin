@@ -1,5 +1,6 @@
 import { readFileSync } from "fs";
 import path from "path";
+import { EngageLeadModal } from "@/components/EngageLeadModal";
 import { MuezzinClientInit } from "@/components/MuezzinClientInit";
 import { MuezzinThemeScripts } from "@/components/MuezzinThemeScripts";
 import { applyWpContentPathsToHtml } from "@/lib/wp-public-paths";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <>
       <main suppressHydrationWarning dangerouslySetInnerHTML={{ __html: mainHtml }} />
+      <EngageLeadModal />
       <MuezzinClientInit />
       <MuezzinThemeScripts />
     </>
