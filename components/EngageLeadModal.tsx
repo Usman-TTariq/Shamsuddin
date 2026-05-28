@@ -9,6 +9,7 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
+import { submitPrismatechLead } from "@/lib/prismatech-leads";
 
 const TRIGGER_SELECTOR = ".tq-engage-modal-trigger";
 
@@ -92,22 +93,16 @@ export function EngageLeadModal() {
     setSubmitError(null);
 
     try {
-      const res = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name,
-          email,
-          phone,
-          message,
-          source: "popup",
-        }),
+      const result = await submitPrismatechLead({
+        name,
+        email,
+        phone,
+        message,
+        source: "popup",
       });
 
-      const data = (await res.json()) as { ok?: boolean; error?: string };
-
-      if (!res.ok || !data.ok) {
-        setSubmitError(data.error || "Something went wrong. Please try again.");
+      if (!result.ok) {
+        setSubmitError(result.error);
         return;
       }
 

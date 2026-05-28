@@ -16,6 +16,9 @@ type FormSubmitSuccess = { success?: boolean; message?: string };
 /**
  * Delivers lead to {@link PRISMATECH_LEAD_EMAIL} via FormSubmit (no API key).
  * First submission from a new domain may require activating the inbox (FormSubmit sends a one-time link).
+ *
+ * Call from the **browser** (popup / contact forms). Server-side calls from Vercel/AWS IPs are often
+ * blocked by Cloudflare (“Just a moment…” HTML instead of JSON).
  */
 export async function submitPrismatechLead(
   payload: LeadPayload
@@ -41,6 +44,19 @@ export async function submitPrismatechLead(
     });
 
     const raw = await res.text();
+
+    if (
+      raw.includes("Just a moment") ||
+      raw.trimStart().startsWith("<!DOCTYPE") ||
+      raw.trimStart().startsWith("<html")
+    ) {
+      return {
+        ok: false,
+        error:
+          "Form delivery was blocked (bot protection). Submit from the website in your browser.",
+      };
+    }
+
     let data: FormSubmitSuccess = {};
     try {
       data = JSON.parse(raw) as FormSubmitSuccess;

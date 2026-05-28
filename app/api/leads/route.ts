@@ -5,6 +5,11 @@ import {
   type LeadSource,
 } from "@/lib/prismatech-leads";
 
+/**
+ * Server proxy to FormSubmit. On Vercel/production, FormSubmit often returns Cloudflare
+ * “Just a moment…” HTML — use submitPrismatechLead() from the browser instead (see EngageLeadModal).
+ */
+
 const LEAD_SOURCES: LeadSource[] = ["popup", "contact_desktop", "contact_mobile"];
 
 function parseLeadSource(value: unknown): LeadSource {
