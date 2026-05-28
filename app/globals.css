@@ -128,12 +128,31 @@ footer .tq-cont-list > li > a {
   }
 }
 
+/* Line break hidden by default; block only below max-sm (639px) — not a Bootstrap utility */
+.tq-br-max-sm-block {
+  display: none;
+}
+
+/* Text left by default; centered only below max-sm (639px) */
+.tq-text-center-max-sm {
+  text-align: left;
+}
+
 /* Follow heading: line break only on small screens; 18px type on mobile */
 .tq-follow-heading-br {
   display: none;
 }
 
 @media (max-width: 639px) {
+  .tq-br-max-sm-block {
+    display: block;
+  }
+
+  .tq-text-center-max-sm {
+    width: 100%;
+    text-align: center;
+  }
+
   .tq-follow-heading {
     font-size: 18px !important;
   }
