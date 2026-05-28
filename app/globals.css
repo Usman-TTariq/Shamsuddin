@@ -285,6 +285,16 @@ footer .tq-cont-list > li > a {
   gap: 1rem;
 }
 
+.tq-engage-modal-error {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: #7a1f1f;
+  background: #fdeaea;
+  border: 1px solid rgba(122, 31, 31, 0.25);
+  border-radius: 0.625rem;
+}
+
 .tq-engage-modal-field {
   display: flex;
   flex-direction: column;
